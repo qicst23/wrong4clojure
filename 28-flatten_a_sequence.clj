@@ -1,1 +1,8 @@
-;; http://www.4clojure.com/problem/28
+;; Flatten a Sequence
+;;
+;; Write a function which flattens a sequence.  (= (__ '((1 2) 3 [4 [5 6]])) '(1 2 3 4 5 6))  (= (__ ["a" ["b"] "c"]) '("a" "b" "c"))  (= (__ '((((:a))))) '(:a))Special Restrictionsflatten
+;;
+;; test cases:
+;;   (= (__ '((1 2) 3 [4 [5 6]])) '(1 2 3 4 5 6))
+;;   (= (__ ["a" ["b"] "c"]) '("a" "b" "c"))
+;;   (= (__ '((((:a))))) '(:a))

@@ -1,1 +1,6 @@
-;; http://www.4clojure.com/problem/51
+;; Advanced Destructuring
+;;
+;; Here is an example of some more sophisticated destructuring.  (= [1 2 [3 4 5] [1 2 3 4 5]] (let [[a b & c :as d] __] [a b c d]))
+;;
+;; test cases:
+;;   (= [1 2 [3 4 5] [1 2 3 4 5]] (let [[a b & c :as d] __] [a b c d]))
