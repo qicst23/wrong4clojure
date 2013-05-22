@@ -1,1 +1,7 @@
-;; http://www.4clojure.com/problem/126
+;; Through the Looking Class
+;;
+;; Enter a value which satisfies the following:  (let [x __]  (and (= (class x) x) x))
+;;
+;; test cases:
+;;   (let [x __]  (and (= (class x) x) x))
+

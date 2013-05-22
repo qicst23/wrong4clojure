@@ -1,1 +1,6 @@
-;; http://www.4clojure.com/problem/4
+;; Intro to Lists
+;;
+;; Lists can be constructed with either a function or a quoted form.  (= (list __) '(:a :b :c))
+;;
+;; test cases:
+;;   (= (list __) '(:a :b :c))
