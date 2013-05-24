@@ -8,3 +8,10 @@
 ;;   (= [1 0 0 1] (__ 9 2))
 ;;   (= [1 0] (let [n (rand-int 100000)](__ n n)))
 ;;   (= [16 18 5 24 15 1] (__ Integer/MAX_VALUE 42))
+
+(fn bc [num base]
+  (if (< num base)
+    [num]
+    (let [q (quot num base)
+          r (rem num base)]
+      (conj (bc q base) r))))
