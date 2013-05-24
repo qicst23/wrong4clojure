@@ -9,3 +9,5 @@
 ;;   (true? (__ [:foo :bar :foo]))
 ;;   (true? (__ '(1 1 3 3 1 1)))
 ;;   (false? (__ '(:a :b :c)))
+
+#(= (reverse (reverse %1)) (reverse %1))

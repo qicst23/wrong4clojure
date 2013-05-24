@@ -7,3 +7,10 @@
 ;;   (= (__ [:a :b :c] 0) :a)
 ;;   (= (__ [1 2 3 4] 1) 2)
 ;;   (= (__ '([1 2] [3 4] [5 6]) 2) [5 6])
+
+(fn nth' [l i]
+  (let [fst (first l)
+        rst (rest l)]
+    (if (= i 0)
+      fst
+      (nth' rst (dec i)))))

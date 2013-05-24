@@ -4,3 +4,5 @@
 ;;
 ;; test cases:
 ;;   (= __ true)
+
+true

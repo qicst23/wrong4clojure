@@ -6,3 +6,5 @@
 ;;   (= (__ "HeLlO, WoRlD!") "HLOWRD")
 ;;   (empty? (__ "nothing"))
 ;;   (= (__ "$#A(*&987Zf") "AZ")
+
+#(clojure.string/replace %1 #"[^A-Z]" "")

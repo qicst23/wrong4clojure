@@ -9,3 +9,8 @@ Write a function that accepts a variable length mathematical expression consisti
 ;;   (= 42 (__ 38 + 48 - 2 / 2))
 ;;   (= 8  (__ 10 / 2 - 1 * 2))
 ;;   (= 72 (__ 20 / 2 + 2 + 4 + 8 - 6 - 10 * 9))
+
+(fn [& args]
+  (loop [[one op two & eqn] args]
+    (let [res (op one two)]
+    (if (empty? eqn) res (recur (cons res eqn))))))

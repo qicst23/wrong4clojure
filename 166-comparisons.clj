@@ -13,3 +13,9 @@ x < y → :lt
 ;;   (= :eq (__ (fn [x y] (< (count x) (count y))) "pear" "plum"))
 ;;   (= :lt (__ (fn [x y] (< (mod x 5) (mod y 5))) 21 3))
 ;;   (= :gt (__ > 0 2)) 
+
+(fn [op one two]
+  (if (not (op one two))
+      (if (not (op two one))
+        :eq
+        :gt) :lt))

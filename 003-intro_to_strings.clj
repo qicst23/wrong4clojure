@@ -4,3 +4,5 @@
 ;;
 ;; test cases:
 ;;   (= __ (.toUpperCase "hello world"))
+
+"HELLO WORLD"
