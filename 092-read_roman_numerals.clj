@@ -10,3 +10,11 @@ You can assume that the input will be well-formed, in upper-case, and follow the
 ;;   (= 3999 (__ "MMMCMXCIX"))
 ;;   (= 48 (__ "XLVIII")) 
 
+;; This is the one I came up with. I thought it was pretty so also put it on Rosetta Code too.
+;; - Paul
+(fn [r] 
+  (->> (reverse r)
+       (replace (zipmap "MDCLXVI" [1000 500 100 50 10 5 1]))
+       (partition-by identity)
+       (map (partial apply +))
+       (reduce #(if (< %1 %2) (+ %1 %2) (- %1 %2)))))
